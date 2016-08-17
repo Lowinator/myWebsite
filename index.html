@@ -1,14 +1,92 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
-		<title>Page 3</title>
+		<link rel="stylesheet" type="text/css" href="Style 3.css">
+		<title>Animation test</title>
+		<canvas id="canvas"></canvas>
 	</head>
-
 	<body>
-		<h1>Page 3</h1><br>
-		<p>Other websites:<br></p>
 
+		<script type="text/javascript" src="jquery-2.2.1.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> 
+		</script>
+		<script type="text/javascript" src="Script 2.js"></script>
+
+		<div class="wrapper">
+			<div class="outerCircle">
+
+				<img src="Lowinator logo.jpg">
+				<div class="circleBorder">
+					<div class="infoCircle">
+					<br>
+						<h2>David Glavas</h2>
+						<p>aka</p>
+						<span><a href="http://www.lolking.net/summoner/eune/20139574#profile">Lowinator</a></span>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="name">
+			Lowinator
+		</div>
+
+		<p id="textName">Work in progress <br><br><br><br><br><br></p>		
+		
+		<footer>
+			<div class="wrapperButtons"> 
+				<a class="Buttons" href="mailto: divadglavas@gmail.com "target="_blank">
+					<img src="mail.png">
+				</a>
+			
+				<a class="Buttons" href="https://www.youtube.com/user/MrDivad006">
+					<img src="yt.png">
+				</a>
+				
+				<a class="Buttons" href="#">
+					<img src="in.png">
+				</a>
+
+				<a class="Buttons" href="#">
+					<img src="resume.png">
+				</a>
+				
+
+			</div>
+			
+		</footer>
+
+		<script type="text/javascript" src="jquery-2.2.1.js"></script>
+
+		<script>
+			$(document).ready(function() {
+
+			    /* Every time the window is scrolled ... */
+			    $(window).scroll( function(){
+			    
+			        /* Check the location of each desired element */
+			        $('.Buttons').each( function(i){
+			            
+			            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+			            var bottom_of_window = $(window).scrollTop() + $(window).height();
+			            
+			            /* If the object is completely visible in the window, fade it it */
+			            if( bottom_of_window+50 >= bottom_of_object ){
+			                
+			                $(this).animate({'opacity':'1'},2000);
+			                    
+			            }
+			            
+			        }); 
+			    
+			    });
+
+
+			});
+		</script>
+
+ 	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	</body>
-
 </html>
+

@@ -1,0 +1,82 @@
+html,body {
+	height:100%; 
+	width:100%; 
+	background-image: url("https://wallpaperscraft.com/image/blue_background_texture_solid_color_65792_2560x1440.jpg");
+	color: white;
+
+}
+
+.wrapperButtons {
+	text-align: center;
+
+}
+
+.Buttons {
+    width: 110px;
+    height: auto;
+    display: inline-block;
+    opacity: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 250px;
+	height: 250px;
+}
+
+.wrapper img {
+	width: 250px;
+	height: 250px;
+}
+
+.outerCircle {
+	overflow: hidden;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	position: relative;
+}
+
+.circleBorder {
+	position: absolute;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	border: 25px solid rgba(192, 214, 214, 0.5);
+	top: 50%;
+	left: 50%;
+	margin: -125px 0px 0px -125px;
+}
+
+.infoCircle {
+	position: absolute;
+	background: white;
+	opacity: 0.95;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	transition: all 0.5s ease-in-out;
+	top: 50%;
+	left: -250px;
+	margin: -100px 0px 0px -100px;
+	text-align: center;
+	color: white;
+}
+
+.outerCircle:hover .infoCircle {
+	color: black;
+	transition: all 0.5s ease-in-out;
+	left: 50%;
+}
+
+#name {
+
+	margin: 4%;
+	text-align: center;
+	font-size: 180%;
+}
+
+#textName {
+	margin: 5%;
+	text-align: center;
+}
