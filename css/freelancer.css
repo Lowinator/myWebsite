@@ -264,6 +264,7 @@ section.success {
   box-shadow: none !important;
   resize: none;
 }
+
 .floating-label-form-group label {
   display: block;
   z-index: 0;
